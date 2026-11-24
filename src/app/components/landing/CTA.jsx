@@ -1,8 +1,8 @@
 'use client';
-import { ArrowRight, Code } from "lucide-react";
+import { ArrowRight, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-const REPO_URL = "https://github.com/Joositoo/My_Wallet_V2";
+const LINKEDIN_URL = "https://www.linkedin.com/in/jos%C3%A9-manuel-romero-php-java-python-mysql-react-html-css/";
 
 export default function CTA() {
     const router = useRouter();
@@ -23,9 +23,9 @@ export default function CTA() {
                         <ArrowRight className="w-5 h-5" />
                     </button>
 
-                    <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-border rounded-lg hover:bg-accent transition-colors flex items-center justify-center gap-2 hover:cursor-pointer">
-                        <Code className="w-5 h-5" />
-                        Ver el código
+                    <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-border rounded-lg hover:bg-accent transition-colors flex items-center justify-center gap-2 hover:cursor-pointer">
+                        <User className="w-5 h-5" />
+                        Contactar por LinkedIn
                     </a>
                 </div>
 
